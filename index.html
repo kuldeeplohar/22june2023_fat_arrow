@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fat arrow</title>
+    </head>
+    <body>
+        <script>
+         // old method
+
+         //define
+        function myFunctionA(){   
+
+        ;
+
+            return 10;
+        } 
+ 
+
+        //fat arrow
+        let myFunctionB=(...n2)=>{    //rest oprator
+
+          console.log(n2[0]);
+            var a=5
+
+            return a+n2[0];
+        }
+
+        var myFunctionc= n3 =>{  //when we have only one prameter ,,, we remove round bracket without issue.
+          
+          console.log(n3);
+
+        }
+
+        var myFunctiond=(n4,n5)=>{
+            
+            return n4+n5;
+        }
+       
+       
+        //call/invoke
+        var x =myFunctionA()
+          console.log(x) ;   
+       
+        let y =myFunctionB(2)
+        console.log(y);
+
+        console.log(x+y);
+
+        myFunctionc(50);
+
+       console.log(myFunctiond(60,70));
+         
+
+        
+        </script>
+        <script src="./js/script.js"></script>
+        <script src="./js/script2.js"></script>
+        <script src="./js/script3.js"></script>
+    </body>
+</html>                                                         
